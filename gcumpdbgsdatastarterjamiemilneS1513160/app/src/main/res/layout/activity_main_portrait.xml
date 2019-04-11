@@ -1,0 +1,32 @@
+<!-- "Student ID: Jamie Milne S1513160" -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@+id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="10sp" android:text="Student ID: Jamie Milne S1513160"/>
+        <TextView android:id="@+id/acknowledgement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="10sp" android:text="Contains British Geological Survey materials ©NERC 2019"/>
+        <TextView android:id="@+id/info" android:layout_width="fill_parent"  android:layout_height="wrap_content"  android:textSize="10sp" android:text="Input a date in the past 100 in DD/MM/YYYY days to retrieve data pertaining to it"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="bottom" android:layout_weight="0.66">
+                    <EditText android:id="@+id/DayInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.33"  android:textSize="5sp" android:inputType="number" android:maxLength="2" />
+                    <EditText android:id="@+id/MonthInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.33"  android:textSize="5sp" android:inputType="number" android:maxLength="2"/>
+                    <EditText android:id="@+id/YearInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.33"  android:textSize="5sp" android:inputType="number" android:maxLength="4"/>
+                </LinearLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="bottom" android:layout_weight="0.33">
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="bottom" android:layout_weight="0.5">
+                        <Button android:id="@+id/north" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Farthest North" android:textSize="4sp" android:layout_weight="0.25"/>
+                        <Button android:id="@+id/east" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Farthest East" android:textSize="4sp" android:layout_weight="0.25"/>
+                        <Button android:id="@+id/south" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Farthest South" android:textSize="4sp" android:layout_weight="0.25"/>
+                        <Button android:id="@+id/weat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Farthest North" android:textSize="4sp" android:layout_weight="0.25"/>
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="bottom" android:layout_weight="0.5">
+                        <Button android:id="@+id/magnitude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Highest magnitude" android:textSize="5sp" android:layout_weight="0.25"/>
+                        <Button android:id="@+id/depth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Deepest" android:textSize="5sp" android:layout_weight="0.25"/>
+                        <Button android:id="@+id/all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="All" android:textSize="5sp" android:layout_weight="0.25"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView android:id="@+id/dataDisplay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5"> </ListView>
+        </LinearLayout>
+    </LinearLayout>
